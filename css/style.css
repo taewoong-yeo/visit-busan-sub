@@ -1,0 +1,270 @@
+/* 지도부분 스타일 */
+
+@import url(font/BusanBada.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,li {
+    list-style: none;
+}
+
+/* 맵부분 */
+
+.map {
+    width: 1920px;
+    height: 988px;
+    /* background-color: khaki; */
+    position: relative;
+}
+
+.map>a i {
+    position: absolute;
+    color: #2146db;
+    right: 200px;
+    top: 530px;
+    font-size: 3em;   
+    transition: all 0.5s;
+}
+
+.map>a i:hover {
+    transform: scale(1.1);
+}
+
+.map .kigang {
+    position: absolute;
+    padding: 150px 120px 100px;
+    z-index: 999;
+    top: 150px;
+    left: 700px;
+    border-radius: 40%;
+    /* background-color: chartreuse; */
+}
+
+.map .haewoondae {
+    position: absolute;
+    padding: 120px 90px 90px;
+    z-index: 999;
+    top: 370px;
+    left: 620px;
+    border-radius: 50%;
+    /* background-color: cadetblue; */
+}
+
+.map-box {
+    position: relative;
+}
+
+.map-box img {
+    position: absolute;
+    top: 0;
+    left: 150px;
+}
+
+.map-box img {
+    opacity: 0;
+}
+
+.map-box img.mapOn {
+    opacity: 1;
+}
+
+.map-title {
+    position: absolute;
+    right: 360px;
+    top: 145px;
+    font-weight: normal;
+}
+
+.map-title p:nth-child(1) {
+    font-size: 30px;
+    font-family: 'BusanBada';
+    text-align: right;
+}
+
+.map-title p:nth-child(2) {
+    font-size: 36px;
+    text-align: right;
+    font-weight: normal;
+    font-family: 'BusanBada';
+    margin-top: -10px;
+    color: #2146db;
+}
+
+.map-title p:nth-child(3) {
+    font-size: 36px;
+    font-weight: normal;
+    font-family: 'BusanBada';
+    margin-top: -10px;
+    color: #2146db;
+}
+
+.map-title img {
+    position: absolute;
+    top: 120px;
+    right: -50px;
+    opacity: 0.5;
+}
+
+.introduce_wrap {
+    width: 600px;
+    height: 440px;
+    position: absolute;
+    top: 340px;
+    right: 310px;
+    border: 1px solid gray;
+}
+
+.introduce_wrap>img {
+    position:absolute;
+    top: 30px;
+    left: -30px;
+    opacity: 0.5;
+}
+
+.introduce_wrap a p {
+    position: absolute;
+    top: 80px;
+    left: 35px;
+    font-size: 30px;
+    font-family: 'BusanBada';
+    color: #2146db;
+}
+
+.introduce_wrap a:hover p {
+    text-decoration: underline;
+}
+
+.introduce_wrap a img {
+    position: absolute;
+    top: 80px;
+    right: -60px;
+    transition: all 0.5s;
+}
+
+.introduce_wrap a img:hover {
+    transform: scale(1.05);
+}
+
+.introduce_wrap .introduce {
+    display: block;
+}
+
+.introduce_wrap>div {
+    display: none;
+}
+
+/* .introduce_wrap #on{
+    display: block;
+} */
+
+.youtube {
+    width: 1920px;
+    height: 1010px;
+    /* background-color: chocolate; */
+    text-align: center;
+    position: relative;
+}
+
+.youtube>a img {
+    margin-top: 50px;
+    transition: all 0.5s;
+}
+
+.youtube>a img:hover {
+    transform: scale(1.1);
+}
+
+.youtube .youtube_box {
+    position: absolute;
+    top: 280px;
+    left: 600px;
+    width: 765px;
+    height: 530px;
+    border: 2px solid #2146db;
+    border-radius: 30px;
+}
+
+.youtube .youtube_box iframe {
+    margin-top: 30px;
+    width: 715px;
+    height: 400px;
+}
+
+.youtube .youtube_box a{
+    display: block;
+    margin-top: 15px;
+    font-size: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+.youtube .youtube_box a:hover {
+    text-decoration-line: underline;
+}
+
+.youtube .youtube_box p:nth-child(3) {
+    font-size: 18px;
+    color: #315ae2;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+.youtube>p {
+    font-size: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    color: #315ae2;
+    position: absolute;
+    top: 830px;
+    left: 700px;
+}
+
+.youtube>a:nth-child(4) {
+    position: absolute;
+    top: 430px;
+    left: 1390px;
+    font-size: 24px;
+    font-family: 'BusanBada';
+    color: #2146db;
+    transition: all 0.5s;
+}
+
+.youtube>a:nth-child(5) {
+    position: absolute;
+    top: 455px;
+    left: 1390px;
+    font-size: 30px;
+    font-family: 'BusanBada';
+    color: #2146db;
+    transition: all 0.5s;
+}
+
+.youtube>a:nth-child(6) img {
+    position: absolute;
+    top: 410px;
+    left: 1410px;
+} 
+
+.youtube>a:hover {
+    transform: scale(1.05);
+}
+
+.youtube>img {
+    position: absolute;
+    top: 440px;
+    left: 1420px;
+    opacity: 0.5;
+    height: 23px;
+
+}

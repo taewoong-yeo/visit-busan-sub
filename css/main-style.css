@@ -1,0 +1,330 @@
+/* 스타일 시트 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* #wrap */
+#app{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url("../img/back.png") no-repeat;
+    
+}
+
+/* header */
+
+header {
+    height: 1290px;
+}
+
+header .logo{
+    position: absolute;
+    top: 83px;
+    left: 130px;
+    z-index: 3;
+}
+header .logo2 img{
+    width: 125px;
+    height: 87px;
+    position: absolute;
+    top: 83px;
+    left: 129px;
+    z-index: 5;
+    /* display: none; */
+}
+/* menu */
+
+header nav{
+    width: 810px;
+    height: 30px;
+    position: absolute;
+    top: 79px;
+    left: 630px;
+    /* border: 1px solid red; */
+    float: right;
+    margin-right: 40px;
+    z-index: 5;
+}
+
+header .dropbox{
+    position: absolute;
+    width: 100%;
+    height: 371px;
+    top: 58px;
+    background-color: #2146DB;
+    opacity: 85%;
+    z-index: 4;
+
+}
+
+.sub>li a{
+    font: lighter 16px/3 "Noto Sans CJK KR";
+    color: #fff;
+
+}
+
+.gnb>li{
+    float: left;
+    width: 120px;
+    height: 24px;
+    margin-right: 50px;
+    line-height: 30px;
+    text-align: center;
+    /* border: 1px solid blue; */
+}
+header .gnb>li:last-child{
+    margin-right: 0;
+}
+header .gnb>li>a{
+    font: normal 20px/1 "BusanBada";
+    color: #fff;
+}
+header .icon{
+    width: 245px;
+    height: 40px;
+    position: absolute;
+    right: 170px;
+    top: 83px;
+    z-index: 5;
+
+}
+header .icon li a{
+    float: left;
+    margin-right: 24px;
+}
+
+
+/* visual */
+#visual{
+    width:1702px;
+    height: 1200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* 날씨정보 텍스트 */
+
+
+
+/* 슬라이더 이미지 */
+.main{
+    width: 100%;
+    height:100%;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    
+}
+.main>img{
+    width:1703px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    top:0;
+    right:0;
+    z-index: 2;
+}
+#slider{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.main>a{
+    width: 96px;
+    height: 30px;
+    color: #fff;
+    font: normal 16px/1 "NotoSans";
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 30.5%;
+    right: 5%;
+    z-index: 3;
+}
+.item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 100px;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 0;
+}
+
+.showing{
+    opacity: 1;
+    z-index: 1;
+}
+
+/* footer */
+
+footer{
+    width: 1932px;
+    position: relative;
+}
+footer.ill{
+    position: absolute;
+    z-index: 0;
+}
+
+footer .logo{
+    position: absolute;
+    bottom: 320px;
+    left: 68px;
+    z-index: 1;
+}
+
+footer .left{
+    width: 400px;
+    height: 126px;
+    /* border: 1px solid black; */
+    position: absolute;
+    bottom: 167px;
+    left: 68px;
+}
+.left p{
+    font:normal 14px/2 "Noto Sans CJK KR";
+    color: #fff;
+}
+
+.f_icon .band{
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+}
+.f_icon .face{
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+}
+.f_icon .insta{
+    position: absolute;
+    bottom: 0;
+    left: 24%;
+}
+.f_icon .you{
+    position: absolute;
+    bottom: 3%;
+    left: 40%;
+}
+.left .f_icon li{
+    width: 32px;
+    height: 34px;
+    float: left;
+}
+
+.bottom{
+    width: 700px;
+    height: 16px;
+    /* border: 1px solid red;  */
+    position: absolute;
+    left: 68px;
+    bottom: 82px;
+}
+.bottom li{
+    float: left;
+    margin-right: 70px;
+}
+.bottom li:last-child{
+    margin-right: 0;
+}
+.bottom li a{
+    font: normal 14px/1 "Noto Sans CJK KR";
+    color: #fff;
+}
+
+.center{
+    width: 900px;
+    height: 205px;
+    /* border: 1px solid blueviolet; */
+    position: absolute;
+    bottom: 210px;
+    left: 530px;
+}
+.center nav{
+    width: 100%;
+    height: 15px;
+}
+.center .f_menu>li{
+    float: left;
+    margin-right: 95px;
+    text-align: center;
+}
+.center .f_menu>li:last-child{
+    margin-right: 0;
+}
+.center .f_menu>li>a{
+    text-align: center;
+    display: block;
+    color: #fff;
+    font: normal 14px/2 "Noto Sans CJK KR";
+}
+.f_menu .f_sub>li>a{
+    text-align: center;
+    display: block;
+    margin:  0 auto;
+    color: #fff;
+    font: lighter 14px/2 "Noto Sans CJK KR";
+}
+
+.right{
+    width: 450px;
+    height:100px;
+    position:absolute;
+    z-index: 5;
+    /* border:1px solid red; */
+    bottom: 160px;
+    right: 30px;
+    
+}
+.right li{
+    float: left;
+    margin-right: 40px;
+    text-align: center;
+}
+.right li:last-child{
+    margin-right: 0px;
+}
+.right a{
+    width: 75px;
+    height: 50px;
+    display: block;
+    font: lighter 14px/1.2 "Noto Sans CJK KR";
+    color: #fff;
+}
+.right a img{
+    margin-bottom: 15px;
+}
+.right_p{
+    width: 450px;
+    height: 17px;
+    /* border: 1px solid red; */
+    position: absolute;
+    right: 60px;
+    bottom: 63px;
+    line-height: 17px;
+    font: 14px/1 lighter "Noto Sans CJK KR";
+    color: #fff;
+}
+
+.q{
+    width: 54px;
+    height: 53px;
+    position: absolute;
+    bottom: 368px;
+    right: 84px;
+}

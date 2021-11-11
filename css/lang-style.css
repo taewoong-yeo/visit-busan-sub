@@ -1,0 +1,207 @@
+/* 랭귀지 페이지 스타일 */
+
+@import url(font/BusanBada.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+@font-face {
+    font-family: 'BusanBada';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BusanBada.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.back {
+    width: 1920px;
+    height: 1020px;
+    background: url(../img/lang_back.jpg) center ;
+    position: relative;
+}
+
+.back .korean_box{
+    position: absolute;
+}
+
+.back .korean_box:hover {
+    animation: korea 3s linear infinite;
+}
+
+@keyframes korea {
+    0% {
+        top: 0;
+    }
+
+    25% {
+        top: -20px;
+    }
+
+    50% {
+        top: 0;
+    }
+
+    75% {
+        top: 20px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.back .korean_box .korea {
+    position: absolute;
+    left: 0;
+    top: 200px;
+    opacity: 0.7;
+}
+
+.back .korean_box a {
+    position: absolute;
+    top: 500px;
+    left: 72px;
+}
+
+
+.back a.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #434343;
+    position: absolute;
+    top: 500px;
+    left: 72px;
+    border-radius: 50%;
+}
+
+.back a.arrow1 {
+    width: 45px;
+    height: 21px;
+    z-index: 99;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 200;
+    top: 485px;
+    left: 70px;
+
+}
+
+.back .korean_box a p {
+    font-family: 'BusanBada';
+    font-size: 32px;
+    color: #cccfdd;
+    position: absolute;
+    top: 4px;
+    left: 90px;
+}
+
+.back .foreinger_box{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.back .foreinger_box:hover {
+    animation: korea 3s linear infinite;
+}
+
+.back .foreinger_box .foreinger {
+    position: absolute;
+    right: 0;
+    top: 250px;
+    opacity: 0.7;
+}
+
+.back .foreinger_box a {
+    position: absolute;
+    top: 500px;
+    right: 72px;
+}
+
+
+.back .foreinger_box a.circle2 {
+    width: 40px;
+    height: 40px;
+    background-color: #434343;
+    position: absolute;
+    top: 500px;
+    right: 70px;
+    border-radius: 50%;
+}
+
+.back a.arrow2 {
+    width: 45px;
+    height: 21px;
+    z-index: 99;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 200;
+    top: 485px;
+    right: 80px;
+
+}
+
+.back .foreinger_box a p {
+    font-family: 'BusanBada';
+    font-size: 32px;
+    color: #2146db;
+    position: absolute;
+    top: 4px;
+    right: 70px;
+}
+
+.back .foreinger_box a.english p{
+    top: 80px;
+    font-size: 28px;
+    opacity: 0;
+    color: #434343;
+}
+
+.back .foreinger_box a.chinese p{
+    top: 130px;
+    font-size: 28px;
+    opacity: 0;
+    color: #434343;
+}
+
+.back .foreinger_box a.japanese p{
+    top: 180px;
+    font-size: 28px;
+    opacity: 0;
+    color: #434343;
+}
+
+.back .foreinger_box:hover a p{
+    opacity: 1;
+    transition: 1s;
+}
+
+.back>img {
+    position: absolute;
+    top: 450px;
+    left: 860px;
+    /* animation: title 3s linear ; */
+    opacity: 1;
+}
+
+@keyframes title {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

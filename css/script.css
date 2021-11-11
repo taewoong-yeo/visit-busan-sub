@@ -1,0 +1,461 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@font-face {
+    font-family: 'BusanBada';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BusanBada.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #313131;
+}
+
+.section {
+    height: auto;
+}
+/* 퀵메뉴 부분 */
+#quickmenu{
+    width: 80px;
+    height: 280px;
+    position: fixed;
+    bottom: 10%;
+    right: -90px;
+    z-index: 9999;
+    transition: all 1s;
+}
+.quickmenu ul{
+    margin-bottom: 30px;
+    opacity: 1;
+    transition: 0.5s;
+}
+.quickmenu ul:hover{
+    opacity: 0.8;
+}
+.quickmenu ul li{
+    margin: 0 auto;
+    text-align: center;
+}
+.quickmenu ul li:nth-child(2) a{
+    color: #2146db;
+    font-size: 12px;
+}
+
+#quickmenu2{
+    position: fixed;
+    bottom: 50%;
+    right: -60px;
+    z-index: 9999;
+    transition: all 1s;
+}
+
+.quickmenu2 ul li a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 33px;
+    background: #7a90e9;
+    border-radius: 50%;
+    opacity: 1;
+    transition: 0.5s;
+    color: #2146db;
+}
+
+.quickmenu2 ul li a:hover {
+    background-color: #2146db;
+}
+
+.quickmenu2 ul li a.on {
+    background-color: #313131;
+}
+
+.quickmenu2 ul li div {
+    position: fixed;
+    right: 1%;
+    background-color: #2146db;
+    border-radius: 10px;
+    padding: 0 7px ;
+    opacity: 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.quickmenu2 ul li:nth-child(1) div{
+    bottom: 640px;
+    right: -110px;
+    transition: all 0.5s;
+}
+
+.quickmenu2 ul li:nth-child(2) div{
+    bottom: 598px;
+    right: -110px;
+    transition: all 0.5s;
+}
+
+.quickmenu2 ul li:nth-child(3) div{
+    bottom: 555px;
+    right: -110px;
+    transition: all 0.5s;
+}
+
+.quickmenu2 ul li:nth-child(4) div{
+    bottom: 512px;
+    right: -110px;
+    transition: all 0.5s;
+}
+
+.quickmenu2 ul li:nth-child(1) a:hover div {
+    opacity: 1;
+}
+
+.quickmenu2 ul li:nth-child(2) a:hover div {
+    opacity: 1;
+}
+
+.quickmenu2 ul li:nth-child(3) a:hover div {
+    opacity: 1;
+}
+
+.quickmenu2 ul li:nth-child(4) a:hover div {
+    opacity: 1;
+}
+
+/* 섹션 부산 축제 부분 */
+.festival{
+    width: 1400px;
+    height: 660px;
+    margin: 0 auto;
+    margin-top: 185px;
+    margin-bottom: 269px;
+    position: relative;
+}
+section #bff{
+    width: 440px;
+    height: 660px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    overflow: hidden;
+}
+section #bff img{
+    transition: 0.5s;
+}
+section #bff:hover img{
+    transform: scale(1.1);
+}
+section #bff:hover .bff-box{
+    transform: scale(0.9);
+}
+section #bff .bff-box{
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    transition: 0.5s;
+}
+section #bff .bff-box h5{
+    font-size: 24px;
+    font-family: 'BusanBada';
+    font-weight: normal;
+    text-align: right;
+    color: #fff;
+}
+section #bff .bff-box h3{
+    font-size: 48px;
+    font-family: 'BusanBada';
+    font-weight: normal;
+    text-align: right;
+    color: #fff;
+}
+section #fest-title{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+section #bu-event{
+    width: 936px;
+    height: 405px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+section #bu-event article{
+    width: 264px;
+    height: 405px;
+    float: left;
+    position: relative;
+    margin-left: 45px;
+}
+section #bu-event .evtimg{
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 99;
+    overflow: hidden;
+}
+
+section #bu-event .evtimg img{
+    transition: 0.5s;
+}
+section #bu-event .evtimg img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+section #bu-event .evttext{
+    width: 264px;
+    height: 300px;
+    border: 2px solid #fdf4d7;
+    position: absolute;
+    bottom: 0;
+}
+section #bu-event .evttext a{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 17px;
+    transition: 0.3s;
+}
+section #bu-event .evttext a:hover{
+    color: #2146db;
+}
+section #bu-event .evttext span{
+    display: block;
+    font-size: 16px;
+    margin-left: 27px;
+    margin-top: 45px;
+    float: left;
+}
+section #bu-event .evttext i{
+    font-size: 18px;
+    color:#777;
+    float: right;
+    margin-top: 45px;
+    margin-right: 23px;
+    transition: 0.3s;
+}
+section #bu-event .evttext i:hover{
+    cursor: pointer;
+    color: #e8cc8e;
+}
+
+/* 인기 부산여행 */
+section.trip{
+    width: 1234px;
+    height: 1840px;
+    margin: 0 auto;
+}
+section.trip>h2{
+    text-align: center;
+    font-size: 48px;
+    font-family: 'BusanBada';
+    font-weight: normal;
+    color: #2146db;
+    margin-bottom: 62px;
+}
+/* 1. 부산 만덕동 */
+section .tripbox1{
+    height: 530px;
+    position: relative;
+}
+section .tripbox1 .t-img{
+    width: 576px;
+    height: 526px;
+    position: relative;
+}
+section .tripbox1 .t-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section .tripbox1 .t-img .t-mainimg{
+    transition: 0.7s;
+    opacity: 1;
+}
+section .tripbox1 .t-img:hover .t-mainimg{
+    transform: scale(1.1);
+}
+section .tripbox1 .t-wave{
+    position: absolute;
+    top: 160px;
+    left: 500px;
+}
+section .tripbox1 div{
+    float: left;
+}
+section .tripbox1 .t-text{
+    width: 600px;
+    height: 215px;
+    margin-top: 110px;
+    margin-left: 20px;
+}
+section .tripbox1 .t-text p{
+    text-align: right;
+    font-size: 16px;
+    margin-bottom: 55px;
+}
+section .tripbox1 .t-text a{
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 47px;
+    transition: 0.5s;
+    padding-left: 20px;
+}
+section .tripbox1 .t-text a:hover{
+    color: #2146db;
+}
+section .tripbox1 .t-text h6{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 28px;
+    padding-left: 40px;
+}
+section .tripbox1 .t-text h6:hover{
+    color: #555;
+    cursor: pointer;
+}
+
+/* 2.해운대 */
+section .tripbox2{
+    height: 545px;
+    position: relative;
+}
+section .tripbox2 .t-img{
+    width: 552px;
+    height: 545px;
+    position: relative;
+}
+section .tripbox2 .t-img img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+section .tripbox2 .t-img .t-mainimg{
+    transition: 0.7s;
+    opacity: 1;
+}
+section .tripbox2 .t-img:hover .t-mainimg{
+    transform: scale(1.1);
+}
+section .tripbox2 .t-wave{
+    position: absolute;
+    top: 160px;
+    left: 500px;
+}
+section .tripbox2 div{
+    float: left;
+}
+section .tripbox2 .t-text{
+    width: 600px;
+    height: 215px;
+    margin-top: 110px;
+    margin-right: 20px;
+}
+section .tripbox2 .t-text p{
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 55px;
+}
+section .tripbox2 .t-text a{
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 47px;
+    transition: 0.5s;
+    text-align: right;
+    padding-right: 20px;
+}
+section .tripbox2 .t-text a:hover{
+    color: #2146db;
+}
+section .tripbox2 .t-text h6{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    padding-right: 40px;
+    line-height: 28px;
+}
+section .tripbox2 .t-text h6:hover{
+    color: #555;
+    cursor: pointer;
+}
+/* 3. 흰여울 문화마을 */
+section .tripbox3{
+    height: 530px;
+    position: relative;
+}
+section .tripbox3 .t-img{
+    width: 576px;
+    height: 526px;
+    position: relative;
+}
+section .tripbox3 .t-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+section .tripbox3 .t-img .t-mainimg{
+    transition: 0.7s;
+    opacity: 1;
+}
+section .tripbox3 .t-img:hover .t-mainimg{
+    transform: scale(1.1);
+}
+section .tripbox3 .t-wave{
+    position: absolute;
+    top: 160px;
+    left: 500px;
+}
+section .tripbox3 div{
+    float: left;
+}
+section .tripbox3 .t-text{
+    width: 600px;
+    height: 215px;
+    margin-top: 110px;
+    margin-left: 20px;
+}
+section .tripbox3 .t-text p{
+    text-align: right;
+    font-size: 16px;
+    margin-bottom: 55px;
+}
+section .tripbox3 .t-text a{
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 47px;
+    transition: 0.5s;
+    padding-left: 20px;
+}
+section .tripbox3 .t-text a:hover{
+    color: #2146db;
+}
+section .tripbox3 .t-text h6{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 28px;
+    padding-left: 40px;
+}
+section .tripbox3 .t-text h6:hover{
+    color: #555;
+    cursor: pointer;
+}

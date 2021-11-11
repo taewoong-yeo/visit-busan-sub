@@ -1,0 +1,360 @@
+/* 서브 필터부분 스타일 */
+
+@import url(font/BusanBada.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@font-face {
+    font-family: 'BusanBada';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BusanBada.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,li {
+    list-style: none;
+}
+
+/* 필터부분 */
+
+.filter {
+    position: relative;
+    height: 542px;
+    width: 100%;
+}
+
+.filter>p {
+    font-family: "BusanBada";
+    font-size: 40px;
+    position: absolute;
+    top: 50px;
+    left: 845px;
+    color: #2146db;
+}
+
+.filter .filter_box {
+    width: 1200px;
+    height: 185px;
+    background-color: #f7f9fb;
+    position: absolute;
+    top: 150px;
+    left: 360px;
+    border-radius: 30px 0 30px 0;
+    opacity: 1;
+}
+
+.filter .filter_box ul {
+    float: left;
+}
+
+.filter .filter_box ul li a.on {
+    color: #2146db;
+    border: 1px solid #315ae2;
+    font-weight: bold;
+}
+
+/* 일행 */
+
+.filter .filter_box .party {
+    width: 270px;
+    height: 135px;
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left: 25px;
+    
+}
+
+.filter .filter_box .party li {
+    float: left;
+
+}
+
+.filter .filter_box .party .fil_main{
+    width: 270px;
+    font-weight: regular 400;
+    color: #2146db;
+    border-bottom: #2146db 2px solid;
+    margin-top: 30px;
+}
+
+.filter .filter_box .party .fil_main p {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.filter .filter_box .party .fil_sub {
+    width: 33.33%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+} 
+
+.filter .filter_box .party .fil_sub:hover {
+    color: #315ae2;
+}
+
+.filter .filter_box .party .fil_sub a {
+    /* border: 1px solid #315ae2; */
+    border-radius: 20px;
+    padding: 0 15px 0 15px;
+}
+
+/* 계절 */
+.filter .filter_box .season {
+    width: 270px;
+    height: 135px;
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left: 25px;
+    
+}
+
+.filter .filter_box .season li {
+    float: left;
+
+}
+
+.filter .filter_box .season .fil_main{
+    width: 270px;
+    font-weight: regular 400;
+    color: #2146db;
+    border-bottom: #2146db 2px solid;
+    margin-top: 30px;
+}
+
+.filter .filter_box .season .fil_main p {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.filter .filter_box .season .fil_sub {
+    width: 33.33%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+} 
+
+.filter .filter_box .season .fil_sub:hover {
+    color: #315ae2;
+}
+
+.filter .filter_box .season .fil_sub a {
+    /* border: 1px solid #315ae2; */
+    border-radius: 20px;
+    padding: 0 15px 0 15px;
+}
+
+.filter .filter_box .season .fil_sub:nth-child(2) a {
+    padding: 0 20px 0 20px;
+}
+
+/* 여행지 */
+
+.filter .filter_box .spot {
+    width: 270px;
+    height: 135px;
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left: 25px;
+    
+}
+
+.filter .filter_box .spot li {
+    float: left;
+
+}
+
+.filter .filter_box .spot .fil_main{
+    width: 270px;
+    font-weight: regular 400;
+    color: #2146db;
+    border-bottom: #2146db 2px solid;
+    margin-top: 30px;
+}
+
+.filter .filter_box .spot .fil_main p {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.filter .filter_box .spot .fil_sub {
+    width: 33.33%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+} 
+
+.filter .filter_box .spot .fil_sub:hover {
+    color: #315ae2;
+}
+
+.filter .filter_box .spot .fil_sub a {
+    /* border: 1px solid #315ae2; */
+    border-radius: 20px;
+    padding: 0 15px 0 15px;
+}
+
+/* 위치 */
+
+.filter .filter_box .location {
+    width: 270px;
+    height: 135px;
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left: 25px;
+    
+}
+
+.filter .filter_box .location li {
+    float: left;
+
+}
+
+.filter .filter_box .location .fil_main{
+    width: 270px;
+    font-weight: regular 400;
+    color: #2146db;
+    border-bottom: #2146db 2px solid;
+    margin-top: 30px;
+}
+
+.filter .filter_box .location .fil_main p {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.filter .filter_box .location .fil_sub {
+    width: 33.33%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+} 
+
+.filter .filter_box .location .fil_sub:hover {
+    color: #315ae2;
+}
+
+.filter .filter_box .location .fil_sub a {
+    /* border: 1px solid #315ae2; */
+    border-radius: 20px;
+    padding: 0 15px 0 15px;
+}
+
+.filter .filter_box .location .fil_sub:nth-child(3) a {
+    padding: 0 20px 0 20px;
+}
+
+.filter .reset_btn {
+    width: 130px;
+    height: 40px;
+    border: #2146db 1px solid;
+    position: absolute;
+    border-radius: 19px;
+    top: 350px;
+    left: 830px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    color: #2146db;
+}
+
+.filter .reset_btn i {
+    margin-right: 6px;
+    font-size: 16px;
+}
+
+.filter .search_btn {
+    width: 130px;
+    height: 40px;
+    background-color: #2146db;
+    position: absolute;
+    border-radius: 19px;
+    top: 350px;
+    left: 1000px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* 해시태그 */
+
+.filter .tag1 {
+    position: absolute;
+    top: 430px;
+    left: 375px;
+}
+
+.filter .tag1 li {
+    float: left;
+}
+
+.filter .tag1 li a {
+    border-radius: 20px;
+    padding: 8px 15px 8px 15px;
+    font-size: 18px;
+}
+
+.filter .tag1 li a.on {
+    border: 1px solid #2146db;
+    color: #2146db;
+    font-weight: 550;
+}
+
+.filter .tag2 li a.on {
+    border: 1px solid #2146db;
+    color: #2146db;
+    font-weight: 550;
+}
+
+.filter .tag1 li a:hover {
+    color: #315ae2;
+} 
+
+.filter .tag2 {
+    position: absolute;
+    top: 475px;
+    left: 430px;
+}
+
+.filter .tag2 li {
+    float: left;
+}
+
+.filter .tag2 li a {
+    border-radius: 20px;
+    padding: 8px 15px 8px 15px;
+    font-size: 18px;
+
+}
+
+.filter .tag2 li a:hover {
+    color: #315ae2;
+} 
+
+.filter img {
+    width: 100px;
+    position: absolute;
+    top: 470px;
+    left: 330px;
+    opacity: 0.7;
+}
